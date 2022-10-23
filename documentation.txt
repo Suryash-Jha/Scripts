@@ -1,0 +1,60 @@
+1.)  To access wsl file via windows(which you should never do) goto location
+{
+		\wsl$\<distro-name>\home\<usr-name>
+		In my Case its: \wsl$\Ubuntu\home\suryash	
+}
+2.) To get full Screen : Alt+ Enter
+
+3.) To delete lines in Vim: dd
+	To delete multiple lines: <number-of-lines>dd
+
+4.) To copy a line: yy
+	To copy multiple lines: <number-of-lines>yy
+
+5.) To Paste: p
+
+6.) To open a new terminal windows: Ctrl+Shift+n
+
+7.) To open a new tab: Ctrl+Shift+t
+
+8.) To "cd" in a Bash Script, Execute the script as : ". ./script,bash"
+			   OR
+			   ". script.bash"
+9.) Alternative of Esc: "Ctrl+[" OR ":"
+10.) To go to next block: "Ctrl+["
+
+11.) To split vertically: :vsplit
+	To split horizontally: :split
+12.)
+		In Nvim:
+		1.) To get suggestion, just type and press Tab
+		2.) To get the function signature, "Shift+K"
+		3.) 
+
+13.) Epoch time is visible on web and its the number of seconds passed since 1 Jan 1970:
+		To print epoch in linux: date +%s
+		in python: import time; time.time()
+		
+14.) To convert Epoch to human readable form:
+		In Linux: date -d @152000000     -> for local time
+			date -ud @152000000    -> for GMT/UTC
+	    In python: import time; time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.localtime(epoch))  -> for local time
+			import time; time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmttime(epoch))     -> for GMT
+
+15.) To create a file using NerdTree in vim:
+Press 'm' in command mode
+then 'add a child node' and then name that file.
+if directory, then add '/' at end
+
+16.) To Comment multiple lines:
+		i) Press V
+		ii) Select all lines which you want to comment
+		iii) then ":norm i#" (Some random symbols will be there as we selected a range)
+	To Uncomment:
+		i) Same Steps but type ":norm x" instead
+		
+17.) xxd-> hexdump:
+	to get hex data: xxd <file_name>
+	to get only hex char: xxd -p <file_name>
+	to get data from hex: echo <hex_data> | xxd -r -p
+bye	
